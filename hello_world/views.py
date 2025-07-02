@@ -6,6 +6,6 @@ from django.http import HttpResponse
 
 def index(request):
     if request.method == "POST":
-        return HttpResponse("You have POSTed something")
+        return HttpResponse("You have POSTed something - well done!")
     else:
         return HttpResponse(request.method)
